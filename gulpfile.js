@@ -62,6 +62,12 @@ gulp.task('plugins', function () {
         .pipe(gulp.dest('build/plugins'));
 });
 
+//Copy typings
+gulp.task('typings', function () {
+    return gulp.src(['primeui.d.ts'])
+        .pipe(gulp.dest('build'));
+});
+
 //Building primeui.js and primeui.min.js
 gulp.task('build-js-prod', function() {
     gulp.src([
@@ -161,7 +167,7 @@ gulp.task('clean', function() {
 gulp.task('build-all', ['build-js-prod', 'build-css-prod', 'build-elements-prod', 
         'build-primeui-js-all', 'build-primeui-css-all',
         'build-primeng-all', 'build-primeng-css-all', 
-        'images','themes','plugins']);
+        'images','themes','plugins', 'typings']);
 
 //Building distribution version with zip folder
 gulp.task('distribute', ['build-all'], function() {
