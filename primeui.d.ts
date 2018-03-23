@@ -762,3 +762,6 @@ interface JQuery {
     puiorderlist(optionLiteral: string, options: PrimeUI.OrderListOptions): any;
     puiorderlist(optionLiteral: string, optionName: string, optionValue: any): JQuery;
 }
+
+declare var primeui: any;
+export = primeui;
