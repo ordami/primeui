@@ -1,8 +1,6 @@
 {
   "license": "Apache-2.0",
   "version": "v4.1.15",
-  "main": "build/primeui.js",
-  "types": "primeui.d.ts",
   "scripts": {
     "start": "lite-server"
   },
