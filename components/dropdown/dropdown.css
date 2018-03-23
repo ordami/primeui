@@ -12,7 +12,7 @@
     border-top: none;
     border-bottom: none;
     cursor: pointer;
-    width: 16px;
+    width: 27px;
     height: 100%;
     position: absolute;
     right: 0;
@@ -22,7 +22,6 @@
 
 .ui-dropdown .ui-dropdown-trigger .fa {
     margin-top: 4px;
-    margin-left: -1px;
 }
 
 .ui-dropdown .ui-dropdown-label  {
